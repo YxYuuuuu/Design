@@ -19,6 +19,7 @@
   "homepage": "https://github.com/zhangshuanyou/Design#readme",
   "dependencies": {
     "babel": "^6.23.0",
+    "jquery": "^3.3.1",
     "less": "^3.0.1"
   }
 }

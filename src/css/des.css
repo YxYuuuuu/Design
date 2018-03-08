@@ -1,0 +1,144 @@
+main {
+  width: 100%;
+  background: rgba(33, 33, 33, 0.9);
+  overflow: hidden;
+  margin: 0 ;
+}
+main h2 {
+  color: white;
+  text-align: center;
+  margin: 0 0 5px 0;
+  font-weight: normal;
+}
+main h6 {
+  color: gray;
+  text-align: center;
+  margin: 0 0 30px 0;
+  font-weight: lighter;
+}
+main nav {
+  width: 100%;
+  height: 35px;
+  margin-bottom: 30px;
+}
+main nav ul {
+  width: 25%;
+  height: 100%;
+  margin: 0 auto;
+  transform: translateX(20px);
+}
+main nav ul li {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  line-height: 35px;
+  color: gray;
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+}
+main nav ul li:hover {
+  background: grey;
+  color: white;
+}
+main > div {
+  width: 60%;
+  height: 800px;
+  margin: 0 auto;
+}
+main > div .showBox {
+  transition: all 0.2s ease-out;
+  width: 29%;
+  height: 30%;
+  display: inline-block;
+  background: burlywood ;
+  margin: 15px;
+}
+main > div .showBox div {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main > div .showBox > div {
+  transition: all 0.7s ease-out;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.85);
+}
+main > div .showBox > div .border {
+  position: absolute;
+  width: 98%;
+  transition: all 0.5s ease-out;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+main > div .showBox > div .content {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  padding-top: 50px;
+  transition: all 0.8s ease-out;
+  color: white;
+  font-size: 12px;
+}
+main > div .showBox > div .content a {
+  font-size: 15px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+main > div .showBox > div .content .day {
+  display: block;
+  color: gray;
+  font-size: 10px;
+}
+main > div .showBox > div .content .text {
+  line-height: 30px;
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+main > div .box2 {
+  transition-delay: .1s;
+}
+main > div .box3 {
+  transition-delay: .15s;
+}
+main > div .box4 {
+  transition-delay: .2s;
+}
+main > div .box5 {
+  transition-delay: .25s;
+}
+main > div .box6 {
+  transition-delay: .3s;
+}
+main > div .box7 {
+  transition-delay: .35s;
+}
+main > div .box8 {
+  transition-delay: .4s;
+}
+main > div .box9 {
+  transition-delay: .45s;
+}
+main > div .showBox:hover > div {
+  opacity: .8;
+}
+main > div .showBox:hover > div .border {
+  transform: scale(0.88);
+}
+main > div .showBox:hover > div .content {
+  transform: translateX(40px);
+}
+.done {
+  transform: translateY(270px);
+  opacity: .5;
+}
+.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.click {
+  background: grey;
+  color: white;
+}
