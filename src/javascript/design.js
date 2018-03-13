@@ -12,35 +12,24 @@
 
     $(`.showBox`).addClass("done");
     $(`li`).eq(0).addClass("click");
-    function load() {
+    function load(obj) {
         for (var i = 0,len = $(`.showBox`).length;i<len;i++){
-            $(`.showBox`).eq(i).addClass("active").removeClass("done")
+           $(`.wrap`).eq(obj).children(".showBox").eq(i).addClass("active").removeClass("done")
+            $(`.wrap`).eq(obj).css({display:"block"}).siblings("div").css({display:"none"}).children(".showBox").eq(i).addClass("done").removeClass("active")
         }
     }
     $(`li`).click(function () {
         $(this).addClass("click").siblings().removeClass("click")
     });
-    $(`li`).eq(1).click(function () {
-        $(`.two`).css({display:"block"}).siblings("div").css({display:"none"});
-        load()
-    });
-    $(`li`).eq(2).click(function () {
+    $();
+    $(`li`).click(function () {
+        let idx = $(this).index();
 
-        $(`.three`).css({display:"block"}).siblings("div").css({display:"none"})
-        load()
-    })
-    $(`li`).eq(3).click(function () {
-        load()
-        $(`.four`).css({display:"block"}).siblings("div").css({display:"none"})
-    })
-    $(`li`).eq(0).click(function () {
-        load()
-        $(`.one`).css({display:"block"}).siblings("div").css({display:"none"})
-
-
-    })
+         load(idx)
+        })
 
     window.onload = function () {
-        load()
+
+       load(0)
     };
 })()

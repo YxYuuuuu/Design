@@ -41,6 +41,10 @@ main nav ul li:hover {
   background: grey;
   color: white;
 }
+main > div:not(1) .showBox {
+  transform: translateY(270px);
+  opacity: .5;
+}
 main > div {
   width: 60%;
   height: 800px;
@@ -141,4 +145,8 @@ main > div .showBox:hover > div .content {
 .click {
   background: grey;
   color: white;
+}
+.omg {
+  opacity: 1;
+  transform: translateY(-100px);
 }
