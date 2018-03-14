@@ -10,7 +10,7 @@
         background(i)
     };
 
-    $(`li`).eq(0).addClass("click");
+    $(`main ul li`).eq(0).addClass("change");
     function load(obj) {
         for (var i = 0,len = $(`.showBox`).length;i<len;i++){
            $(`.wrap`).eq(obj).children(".showBox").eq(i).addClass("active");
@@ -20,7 +20,7 @@
     }
 
     $(`li`).on("click",function () {
-        $(this).addClass("click").siblings().removeClass("click")
+        $(this).addClass("change").siblings().removeClass("change")
         let idx = $(this).index();
         load(idx);
 

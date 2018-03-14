@@ -144,7 +144,7 @@ main > div .showBox:hover > div .content {
 .active {
   animation: anime .3s linear forwards;
 }
-.click {
+.change {
   background: grey;
   color: white;
 }
