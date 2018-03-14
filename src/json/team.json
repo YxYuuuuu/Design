@@ -1,0 +1,33 @@
+{
+    "member":[
+            {
+            "name":"凯文",
+            "position":"CEO",
+              "status":"创始人",
+            "resume":"企业级产品技术研发具有十多年经验，曾开发多款百万级企业产品",
+              "img":"./images/team/famale1.jpg"
+            },
+      {
+        "name":"凯文",
+        "position":"CEO",
+        "status":"创始人",
+        "resume":"企业级产品技术研发具有十多年经验，曾开发多款百万级企业产品",
+        "img":"./images/team/famale2.jpg"
+      },
+      {
+        "name":"凯文",
+        "position":"CEO",
+        "status":"创始人",
+        "resume":"企业级产品技术研发具有十多年经验，曾开发多款百万级企业产品",
+        "img":"./images/team/male1.jpg"
+      },
+      {
+        "name":"凯文",
+        "position":"CEO",
+        "status":"创始人",
+        "resume":"企业级产品技术研发具有十多年经验，曾开发多款百万级企业产品",
+        "img":"./images/team/male2.jpg"
+      }
+
+]
+}

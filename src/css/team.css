@@ -1,56 +1,77 @@
-@charset:"utf-8";
-html,body{
-	width: 100%;
-	margin: 0;
+main {
+  margin: 0;
+  background: rgba(27, 27, 27, 0.9);
 }
-.content{
-	width: 100%;
-	height: 600px;
-	background: whitesmoke;
-	padding-top:100px; 
-} 
-h2{
-	margin: 0 0 15px 0; 
-	text-align: center;
-	font-weight: normal;
-
+main div {
+  box-sizing: border-box;
 }
-p{
-	font-size:13px;
-	margin-bottom: 80px;
-	text-align: center; 
+main > div {
+  width: 70%;
+  height: 700px;
+  margin: 0 auto;
+  padding: 50px 20px;
 }
-section{
-	width: 50%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
+main > div .wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 45%;
+  height: 40%;
+  cursor: pointer;
 }
-.content div{
-	width: 100%;
-	height: 1px;
-	background: lightgrey;
+main > div .wrap .msg {
+  display: inline-block;
+  width: 27%;
+  height: 100%;
+  background: #eeeeee;
 }
-.content img{
-	display: inline-block;
-	position: relative;
-	top: 50px;
-	transition: all .3s linear;
-	
+main > div .wrap .msg img {
+  width: 100%;
+  height: 60%;
 }
-.content span{
-	display: inline-block;
-	width: 50%;
-	height: 40%;
-	font-size: 0.9em;
-	color: grey;
-	transform: translateY(50px)
+main > div .wrap .msg p {
+  padding-left: 20px;
+  margin: 10px 0 ;
 }
-.start{
-	transform: translateX(0px);
-	opacity: 0;
+main > div .wrap .msg p:last-child {
+  color: lightgrey;
 }
-.end{
-	opacity: 1;
-	transform: translateX(30px)
+main > div .wrap .status {
+  display: inline-block;
+  width: 73%;
+  height: 100%;
+  padding-top: 100px;
+}
+main > div .wrap .status span {
+  display: inline-block;
+  width: 80%;
+  height: 20px;
+  color: lightgrey;
+  transition: all .5s linear;
+}
+main > div .wrap .status div {
+  display: inline-block;
+  width: 0;
+  height: 1px;
+  transition: all .5s linear;
+  border-top: 1px solid aliceblue;
+  transform: translateY(-15px);
+}
+main > div .wrap:nth-child(1),
+main > div .wrap:nth-child(2) {
+  margin-bottom: 20px;
+}
+main > div .wrap:hover .status span {
+  width: 60%;
+  margin-left: 20px;
+}
+main > div .wrap:hover .status div {
+  width: 20%;
+}
+main > div > .wrap:nth-child(odd) {
+  float: right;
+}
+main section {
+  width: 100%;
+  height: 300px;
+  background: url("../images/team/bg.jpg") no-repeat;
 }
